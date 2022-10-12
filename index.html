@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Web1 - Html</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin: 0;
+            }
+                
+            a {
+                color:black;
+                text-decoration: none;
+            }
+
+            .saw {
+                color:gray;
+            }
+
+            .active {
+                color:red;
+            }
+
+            h1{
+                font-size: 45px;
+                text-align: center;
+                border-bottom: 1px solid gray;
+                margin: 0;
+                padding: 20px;
+            }
+            ol{
+                border-right: 1px solid gray;
+                width: 100px;
+                margin: 0;
+                padding: 20px;
+            }
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid ol{
+                padding-left: 33px;
+            }
+            #grid #article{
+                padding-left: 25px;
+            }
+            /* screen width < 800px */
+            @media(max-width:800px){
+                    #grid{
+                    display: block;
+                }
+                    ol{
+                    border-right: none;
+                }
+                    h1{
+                        border-bottom: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a href="index.html">Web</a></h1>
+        <ol>
+            <li><a href="1.html" class=""saw">HTml</a></li>
+            <li><a href="2.html" style="color:black text-decorationb      underline">CSS</a></li>
+        </ol>
+        <ul>
+            <li><a href="3.html" class=""saw active">3. JavsScript</a></li>
+        </ul>
+
+        <!--
+        <h1><a href="index.html"><font color="red">Web</font></a></h1>
+        <ol>
+            <li><a href="1.html"><font color="red">HTml</font></a></li>
+            <li><a href="2.html"><font color="red">CSS</font></a></li>
+        </ol>
+        <ul>
+            <li><a href="3.html"><font color="red">3. JavsScript</font></a></li>
+        </ul>
+        -->
+
+        <div id="article">
+        <h2>W3C이란 무엇인가?</h2>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </p>
+        이 <a href="https://www.naver.com/" target="_blank" title="html5 speicification">웹페이지</a>를 남의 문제가 아닌
+        나의 <u>문제</u>라고 상상해주세요.
+        저와 똑같이 하셔도 됩니다만,
+        그것보다는 자신의 삶에서 <strong>중요한 정보</strong>들이 있을 거예요.
+        그런 정보들을 채워가면서 수업을 따라오신다면
+        우리 수업이 보다 의미 있지 않을까요?
+        <img src="sea.jpg" width="450">
+
+        <p style="margin-top: 45px;"> 코드를 보시면
+        단락을 구분하기 위해서 줄바꿈을 했습니다만,
+        줄바꿈이 동작하지 않고 있습니다.
+        <p>왜냐하면 줄바꿈을 하기 위해서는
+        줄바꿈을 해주는 태그가 필요하거든요.<br><br><br>알려드리기 전에 추천 검색어를 알려 드릴게요.
+        직접 검색해서 방법을 찾아보세요.</p>
+        </div>
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-sk6riijml2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
