@@ -2,63 +2,22 @@
     <head>
         <title>Web1 - Html</title>
         <meta charset="utf-8">
-        <style>
-            body{
-                margin: 0;
-            }
-                
-            a {
-                color:black;
-                text-decoration: none;
-            }
-
-            .saw {
-                color:gray;
-            }
-
-            .active {
-                color:red;
-            }
-
-            h1{
-                font-size: 45px;
-                text-align: center;
-                border-bottom: 1px solid gray;
-                margin: 0;
-                padding: 20px;
-            }
-            ol{
-                border-right: 1px solid gray;
-                width: 100px;
-                margin: 0;
-                padding: 20px;
-            }
-            #grid{
-                display: grid;
-                grid-template-columns: 150px 1fr;
-            }
-            #grid ol{
-                padding-left: 33px;
-            }
-            #grid #article{
-                padding-left: 25px;
-            }
-            /* screen width < 800px */
-            @media(max-width:800px){
-                    #grid{
-                    display: block;
-                }
-                    ol{
-                    border-right: none;
-                }
-                    h1{
-                        border-bottom: none;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body style="background-color: black;">
         <h1><a href="index.html">Web</a></h1>
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day'
+        } else{
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night'
+        }
+        ">
         <ol>
             <li><a href="1.html">HTml</a></li>
             <li><a href="2.html">CSS</a></li>
@@ -82,7 +41,9 @@
             줄바꿈이 동작하지 않고 있습니다.
             <p>왜냐하면 줄바꿈을 하기 위해서는
             줄바꿈을 해주는 태그가 필요하거든요.<br><br><br>알려드리기 전에 추천 검색어를 알려 드릴게요.
-            직접 검색해서 방법을 찾아보세요.</p>
+            직접 검색해서 방법을 찾아보세요.
+            </p>
+            
         </div>
     </body>
 </html>
